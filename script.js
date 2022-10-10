@@ -1,6 +1,7 @@
 const containerBall = document.getElementById('containerBall');
 const balls = document.getElementsByClassName('ball');
-const labelColor = document.getElementById('rgb-color')
+const labelColor = document.getElementById('rgb-color');
+const labelIndication = document.getElementById('answer');
 
 
 function random(props=255) {
@@ -15,14 +16,22 @@ function colorGenerator() {
 
 function fillDivBall() {
   for (const ball of balls) {
-    // ball.setAttribute('style', `background: ${colorGenerator()}`)
     ball.style.backgroundColor = colorGenerator()
   }
 
 }
 
-function getColorDivBackground() {
-  console.log('ok');
+function colorComparator(myColor) {
+  if (myColor === colorSelect) {
+    labelIndication.innerHTML = 'Acertou!'
+  } else {
+    labelIndication.innerHTML = 'Errou! Tente novamente!'
+  }
+}
+
+function getColorDivBackground(event) {
+  const myColor = event.target.style.backgroundColor;
+  colorComparator(myColor)
 }
 
 for (let index = 0; index < 6; index += 1) {
