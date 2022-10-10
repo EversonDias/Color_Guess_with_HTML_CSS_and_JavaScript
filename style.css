@@ -1,7 +1,55 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.343);
+}
+
+#containerBall {
+  text-align: center;
+}
+
 .ball {
   display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: solid 1px black;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.containerScore {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+}
+
+.containerFooter {
+  text-align: center;
+}
+
+#answer , #rgb-color , .score {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+#reset-game {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: aqua;
+  color: rgb(73, 71, 71);
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 20px;
 }

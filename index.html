@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,30 @@
   <title>Color Guess</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1 id="title">
     Color Guess
   </h1>
 
-  <p id="rgb-color">
-    (168, 34, 1)
-  </p>
+  <div class="containerScore">
+    <p id="rgb-color">
+      (168, 34, 1)
+    </p>
+    <label class="score">Score <span id="score">0</span></label>
+  </div>
+
 
   <div id="containerBall"></div>
 
-  <p id="answer">
-    Escolha uma cor
-  </p>
-  
+  <div class="containerFooter">
+    <p id="answer">
+      Escolha uma cor
+    </p>
+    <button id="reset-game">Reiniciar</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
