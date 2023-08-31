@@ -38,7 +38,7 @@ Para acessar e executar este projeto, siga os passos abaixo:
 2. Clone o Projeto
 
 ```bash
-git clone https://github.com/EversonDias/Project_Trybe_HTML_CSS_and_JavaScript_Color_Guess.git ColorGuess
+git clone https://github.com/EversonDias/Color_Guess_with_HTML_CSS_and_JavaScript.git ColorGuess
 ```
 
 3. Entre no projeto
